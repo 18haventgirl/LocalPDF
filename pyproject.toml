@@ -1,0 +1,31 @@
+[project]
+name = "localpdf"
+version = "1.0.0"
+description = "纯本地 PDF 工具箱 — 零网络请求、零隐私泄露"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "LocalPDF Team"}
+]
+
+dependencies = [
+    "PySide6>=6.6.0",
+    "PyMuPDF>=1.23.0",
+    "pypdf>=4.0.0",
+    "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pyinstaller>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
