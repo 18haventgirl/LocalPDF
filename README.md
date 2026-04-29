@@ -51,23 +51,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 方式三：打包为 exe
-
-```bash
-# 安装打包工具
-pip install pyinstaller
-
-# 打包（推荐使用干净的虚拟环境）
-pyinstaller --noconfirm --name LocalPDF --windowed \
-    --add-data "assets;assets" \
-    --hidden-import pypdf --hidden-import fitz --hidden-import PIL \
-    --hidden-import PySide6.QtSvg --hidden-import PySide6.QtSvgWidgets \
-    --exclude-module tkinter --exclude-module matplotlib --exclude-module numpy \
-    main.py
-
-# 产物在 dist/LocalPDF/ 目录
-```
-
 ---
 
 ## 📖 使用说明
