@@ -1,6 +1,6 @@
 # 🔷 LocalPDF — 纯本地 PDF 工具箱
 
-> **100% 本地处理 · 零网络请求 · 零隐私泄露 · 完全免费 · 无广告无水印**
+> **100% 本地处理 · 零网络请求 · 零隐私泄露**
 
 <p align="center">
   <img src="assets/logo.svg" width="120" alt="LocalPDF Logo">
