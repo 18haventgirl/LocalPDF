@@ -1,13 +1,5 @@
-# 🔷 LocalPDF — 纯本地 PDF 工具箱
-
-> **100% 本地处理 · 零网络请求 · 零隐私泄露**
-
-<p align="center">
-  <img src="assets/logo.svg" width="120" alt="LocalPDF Logo">
-</p>
-
+# LocalPDF — 本地 PDF 工具箱
 ---
-
 ## ✨ 功能一览
 
 | 功能              | 说明                                                             |
@@ -36,22 +28,6 @@
 1. 前往 [Releases](../../releases) 页面下载最新版
 2. 解压 `LocalPDF.zip`
 3. 双击 `LocalPDF.exe` 即可使用
-
-### 方式二：从源码运行
-
-```bash
-# 克隆项目
-git clone https://github.com/your-username/localpdf.git
-cd localpdf
-
-# 安装依赖
-pip install -r requirements.txt
-
-# 运行
-python main.py
-```
-
----
 
 ## 📖 使用说明
 
@@ -196,25 +172,6 @@ localpdf/
 - **线程层**：所有耗时操作在 QThread 子线程执行，通过 Signal/Slot 更新进度条
 - **核心层**：PyMuPDF 处理渲染/水印/压缩，pypdf 处理合并/拆分/旋转
 - **工具层**：文件校验、路径处理、异常定义、日志记录
-
----
-
-## 🧪 运行测试
-
-```bash
-pip install pytest
-python -m pytest tests/ -v
-```
-
-测试覆盖：合并、拆分、旋转、水印、转换、提取图片、工具函数、输入校验。
-
----
-
-## 📋 系统要求
-
-- **操作系统**：Windows 10/11（64位）
-- **Python**：≥ 3.10（源码运行时）
-- **磁盘空间**：打包后约 50MB
 
 ---
 
